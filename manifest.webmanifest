@@ -1,0 +1,10 @@
+{
+  "name": "Anuranon Creations Business Hub",
+  "short_name": "Anuranon Hub",
+  "start_url": "./",
+  "display": "standalone",
+  "background_color": "#100f15",
+  "theme_color": "#15131c",
+  "description": "Business management hub for Anuranon Creations",
+  "icons": [{"src":"icon.svg","sizes":"any","type":"image/svg+xml","purpose":"any maskable"}]
+}

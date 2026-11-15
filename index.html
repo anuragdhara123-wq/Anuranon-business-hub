@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#15131c">
+  <meta name="description" content="Anuranon Creations Business Hub">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="icon" href="icon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="style.css">
+  <title>Anuranon Creations Business Hub</title>
+</head>
+<body>
+  <div id="login" class="login-wrap">
+    <section class="login-card">
+      <div class="brand-mark">AC</div>
+      <p class="eyebrow">ANURANON CREATIONS</p>
+      <h1>Business Hub</h1>
+      <p class="muted">Your photography business, organised.</p>
+      <form id="login-form">
+        <label for="pin">Enter your PIN</label>
+        <input id="pin" type="password" inputmode="numeric" maxlength="8" placeholder="Demo PIN: 2580" required>
+        <button class="primary full" type="submit">Unlock dashboard</button>
+        <p id="login-error" class="error"></p>
+      </form>
+    </section>
+  </div>
+
+  <div id="app" class="app hidden">
+    <aside class="sidebar">
+      <div class="brand-row"><div class="brand-mark small">AC</div><div><b>Anuranon</b><small>CREATIONS</small></div></div>
+      <nav id="nav">
+        <button class="nav-item active" data-page="dashboard">⌂ Dashboard</button>
+        <button class="nav-item" data-page="clients">♙ Clients</button>
+        <button class="nav-item" data-page="bookings">▣ Bookings</button>
+        <button class="nav-item" data-page="payments">₹ Payments</button>
+        <button class="nav-item" data-page="packages">◇ Packages</button>
+        <button class="nav-item" data-page="finance">↗ Income & expenses</button>
+        <button class="nav-item" data-page="team">♧ Team</button>
+        <button class="nav-item" data-page="leads">◎ Instagram leads</button>
+        <button class="nav-item" data-page="settings">⚙ Settings</button>
+      </nav>
+      <button id="logout" class="logout">Lock app</button>
+    </aside>
+
+    <main class="main">
+      <header class="topbar"><div><p class="eyebrow">ANURANON CREATIONS</p><h1 id="page-title">Dashboard</h1></div><span class="today" id="today"></span></header>
+      <section id="page-content"></section>
+      <footer>ANURANON CREATIONS <span>•</span> Business Hub prototype</footer>
+    </main>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>
